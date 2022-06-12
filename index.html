@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="//unpkg.com/d3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    </head>
+    <body>
+
+        <section class="calculator">
+            <section class="fields">
+            <h1 id="table_title">這餐熱量在一天內佔比多少？</h1>
+          
+             
+            <div class="bmi_calcu">
+                
+                <label>性別 :</label>
+                <label><input type="radio" name="gender" id="male" value="male">男生</label>
+                <label><input type="radio" name="gender" id="female" value="female">女生</label>
+                <br>
+                <label for="bodyHeight">身高 :</label>
+                <input type="number" class="bodyHeight" min="0">CM
+                <br>
+                <label for="bodyWeight">體重:</label>
+                <input type="number" class="bodyWeight" min="0">Kg
+                <br>
+                <label for="bodyYear">年齡:</label>
+                <input type="number" class="bodyYear" min="0">歲
+                <br>
+            </div>
+            <div class="btn_block">
+              <input type="submit" value="計算"  class="calcualteBMI"> 
+              <i class="fas fa-undo reset" title="重新整理"></i>
+                </div>
+              
+           
+                </div>
+            </section>
+        
+            <section class="result">
+              <h2 class="result_txt">你一天的合適熱量：</h2>
+               
+              <p id="bmiText"></p>
+              <p id="resultText">0</p>
+             
+            </section>
+          <section class="bottom">
+            
+            
+          </section>
+          
+            <div class="out">
+                <p id="pie_title"></p>
+                <div id="chart"></div>
+                <div id="mainTooltip" class="hidden">
+                    <p><span id="value"></span></p>
+                </div>
+            </div>
+          
+        
+        </section>
+        
+
+        <div class="food">
+            <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <h1 id="food_name">?</h1>
+            <input type="button" value="今天晚上吃甚麼" id="food_input">
+            <ul style="list-style-position:inside;">
+                <li>拉麵 436大卡</li>
+                <li>滷肉飯 648大卡</li>
+                <li>水餃（10顆） 500大卡</li>
+            </ul>
+
+            <img id="photo">
+            
+        </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main.js" async defer></script>
+        
+    </body>
+</html>

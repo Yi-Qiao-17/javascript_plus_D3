@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+}
+
+
+img {  
+    height: 550px; /*can be anything*/
+    width: 550px; /*can be anything*/
+    text-align: center;
+}
+
+
+li{
+    text-align: left;
+}
+
+
+
+
+.calculator {
+    height: 100vh;
+    width: 300px;
+    background-color: #e6dede;
+    float: left;
+}
+
+.food {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(145, 146, 142);
+}
+
+
+.out{
+    width:250px;
+  }
+  
+  #mainTooltip {
+      position: absolute;
+      min-width :90px;
+      height: 40px;
+      padding: 0 10px 25px 10px;
+      background-color: rgba(0,0,0,0.8);
+      border-radius: 4px;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+      pointer-events: none;
+      fill: #fff;
+      color: #fff;
+      text-anchor: middle;
+      text-align: center;
+      font-weight: bold;
+      z-index: 9999;
+  }
+  #mainTooltip:before {
+      border: solid;
+      border-color: rgba(0,0,0,0.6) transparent;
+      border-width: 10px 10px 0 10px;
+      top: 100%;
+      content: "";
+      left: 43%;
+      position: absolute;
+      z-index: 99;
+  }
+  #mainTooltip.hidden {
+      display: none;
+  }
